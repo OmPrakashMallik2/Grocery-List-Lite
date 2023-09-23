@@ -23,9 +23,24 @@
       }
 
       #input {
-        background-color:aqua;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        background-color: aqua;
         border-radius: 3px;
-        padding: 10px;
+        padding: 3px;
+      }
+
+      #text {
+        width: 70%;
+      }
+
+      #text2 {
+        width: 20%;
+      }
+      #add {
+        width: 10%;
       }
 
       button {
@@ -39,34 +54,22 @@
       button:hover {
         background-color: rgb(0, 0, 69);
       }
+
+      .table {
+        background: skyblue;
+        margin: 5px 0;
+        padding: 5px;
+        border-radius: 5px;
+        width: 100%;
+      }
     </style>
   </head>
   <body>
     <div class="title">
       <h2>Grocery List Lite</h2>
     </div>
-    <div id="input">
-      <input
-        type="text"
-        name="text"
-        id="text"
-        required
-        placeholder="Item"
-      /><br />
 
-      <input
-        type="text"
-        name="Quantity"
-        id="text2"
-        required
-        placeholder="Quantity"
-      />
-      <button onclick="addRow()" type="button" style="font-weight: bold">
-        +</button
-      ><br />
-    </div>
-
-    <div class="table">
+    <div class="table" border="1">
       <table id="table">
         <thead>
           <tr>
@@ -76,8 +79,47 @@
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>NoteBooks</td>
+            <td>5 pcs.</td>
+            <td>
+              <button>x</button>
+              <button>y</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Pens</td>
+            <td>10 pcs.</td>
+            <td>
+              <button>x</button>
+              <button>y</button>
+            </td>
+          </tr>
+        </tbody>
       </table>
+    </div>
+    <div id="input">
+      <input
+        type="text"
+        name="text"
+        id="text"
+        required
+        placeholder="Add your Item"
+      /><br />
+
+      <input
+        type="text"
+        name="Quantity"
+        id="text2"
+        required
+        placeholder="Quantity"
+      />
+      <button onclick="addRow()" id="add" type="button">
+        +</button
+      ><br />
     </div>
 
     <script src="script.js"></script>
