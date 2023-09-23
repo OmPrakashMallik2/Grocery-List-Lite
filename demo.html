@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML Table</title>
+  </head>
+  <body>
+    <table border="2" id="myTable">
+      <thead>
+        <tr>
+          <th>S. N.</th>
+          <th>Grocery</th>
+          <th>Quantity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>1</td>
+        <td>NoteBooks</td>
+        <td>5 pcs.</td>
+        <td>
+          <button>x</button>
+          <button>y</button>
+        </td>
+      </tr>
+    </table>
+
+    <button onclick="addRow()">Add Row</button>
+
+    <script>
+      function addRow() {
+        // Get a reference to the table
+        var table = document.getElementById("myTable");
+
+        // Insert a new row at the end of the table
+        var newRow = table.insertRow();
+
+        // Insert cells into the new row
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+        var cell3 = newRow.insertCell(2);
+        var cell4 = newRow.insertCell(3);
+
+        // Add data to the cells
+        cell1.innerHTML = "2";
+        cell2.innerHTML = "New Grocery";
+        cell3.innerHTML = "3 pcs.";
+        cell4.innerHTML = '<button>x</button><button>y</button>';
+      }
+    </script>
+  </body>
+</html>
