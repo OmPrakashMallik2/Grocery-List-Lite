@@ -23,7 +23,7 @@ function addRow() {
     cel2.textContent = text;
     cel3.textContent = text2;
     cel4.innerHTML =
-        '<button onclick="deleteRow(this)">x</button><button>y</button>';
+        '<button onclick="deleteRow(this)">x</button><button id="green">y</button>';
 
     // Clear input fields
     document.getElementById("text").value = "";
