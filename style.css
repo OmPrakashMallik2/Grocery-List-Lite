@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the body takes the full viewport height */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Specify a fallback font */
+  }
+  
+  /* Container for the title */
+  .title {
+    margin-bottom: 20px; /* Add some spacing below the title */
+  }
+  
+  /* Input part */
+  input {
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 1px;
+    outline: none;
+    border: none;
+    width: 100%; /* Make input fields take full width */
+  }
+  
+  #input {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 216, 216);
+    border-radius: 3px;
+    padding: 3px;
+  }
+  
+  #text {
+    width: 70%;
+  }
+  
+  #text2 {
+    width: 20%;
+  }
+  
+  #add {
+    width: 10%;
+    background-color: blue;
+    color: white;
+    border-radius: 4px; /* Increase border-radius for a smoother look */
+    border: none;
+    font-size: large;
+    cursor: pointer; /* Add cursor pointer to indicate interactivity */
+  }
+  
+  /* Hover effect for the add button */
+  #add:hover {
+    background-color: rgb(0, 0, 69);
+  }
+  
+  h2 {
+    color: antiquewhite;
+    margin: 0; /* Remove default margin to avoid extra spacing */
+  }
+  
+  /* Table part */
+  .table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: white;
+    color: black;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    overflow: auto; /* Add overflow to handle table scrolling if needed */
+  }
+  
+  /* Style the table */
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Remove cell spacing */
+  }
+  
+  /* Style table headers */
+  th {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style table rows */
+  tr {
+    border-bottom: 1px solid #ddd; /* Add border between rows */
+  }
+  
+  /* Style table cells */
+  td {
+    padding: 10px;
+  }
+  
+  /* Style the "x" and "y" buttons inside table cells */
+  button {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    padding: 5px 10px; /* Increase padding for better button appearance */
+    margin-right: 5px; /* Add margin between buttons */
+  }
+  
+  /* Hover effect for the buttons */
+  button:hover {
+    background-color: rgb(0, 0, 69);
+  }
+  
